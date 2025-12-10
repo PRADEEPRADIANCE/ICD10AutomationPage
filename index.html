@@ -88,7 +88,7 @@ async function sendPrompt() {
     sendBtn.innerText = "Processing...";
 
     try {
-        const res = await fetch("http://localhost:8000/generate", {
+        const res = await fetch("https://random-string.trycloudflare.com/generate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ prompt })
